@@ -1,0 +1,19 @@
+[project]
+name = "hydropathy"
+version = "0.1.0"
+description = "test next"
+authors = [
+    {name = "leonardo", email = "boleo88@gmail.com"},
+]
+dependencies = []
+requires-python = ">=3.12"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
