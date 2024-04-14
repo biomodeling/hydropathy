@@ -1,6 +1,6 @@
 [project]
 name = "hydropathy"
-version = "0.1.0"
+version = "0.4.0"
 description = "Measures the hydropathy of a solute based on the orientation of surrounding water molecules"
 authors = [
     {name = "Leonardo Bò", email = "boleo88@gmail.com"},
