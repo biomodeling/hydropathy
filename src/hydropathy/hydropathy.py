@@ -194,12 +194,10 @@ class WaterAngles:
         df_pdb_base = df_pdb_base.query('resid != "SOL"').query('elety != resid')
         df_pdb_base['residue'] = df_pdb_base['resno'].astype(str) + '_' + df_pdb_base['resid']
 
-        # self.create_output_files(res_list)
+        self.create_output_files(df_pdb_base['residue'].to_numpy())
         
-        # # NOTE: we call 'solute' anything that is not an ion or a solvent: 
-        # # proteins, nucleotides, ligands, ...
-        # # select solute index (all heavy atoms)
-        # solute_index = df_pdb[df_pdb["elety"] != "H"].index
+        # NOTE: we call 'solute' anything that is not an ion or a solvent: 
+        # proteins, nucleotides, ligands, ...
         
         for filename in tqdm.tqdm(list_files):
             df_pdb = self.read_pdb(Path(self.input_path).joinpath(filename))
