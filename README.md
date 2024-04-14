@@ -1,3 +1,6 @@
+[![Version](figures/version.svg)](https://github.com/biomodeling/hydropathy)
+[![License: GPL v3](figures/license.svg)](https://github.com/biomodeling/hydropathy/blob/master/LICENSE.md)
+
 # hydropathy
 `hydropathy` is a script written in `python` that calculates the orientation of water modecules around a solute. 
 
