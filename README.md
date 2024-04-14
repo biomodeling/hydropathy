@@ -10,7 +10,7 @@ We also define the vectors joining the center of the tetrahedron with the four v
 
 By measuring the angles formed by **R** with **H1**, **H2**, **LP1**, **LP2** and **d**, the hydropathy of the solute can be characterized.
 
-More information on theory can be found <a href="https://www.frontiersin.org/articles/10.3389/fmolb.2021.626837/full" target="blank_">here</a>
+More information on theory can be found <a href="https://www.frontiersin.org/articles/10.3389/fmolb.2021.626837/full" target="_blank">here</a>
 
 
 ## Installation
