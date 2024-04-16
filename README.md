@@ -41,3 +41,24 @@ The output consists of a series of files of the type `<resno>_<resname>.csv`, on
 - `distance`: is the distance (expressed in Å) between the oxygen atom of a water molecule (center of the tetrahedron) and the nearest solute atom (excluding hydrogens), if the latter is at a distance less than 6Å (**R**)
 - `theta1, ..., theta4`: are the angles formed between **R** and the vectors joining the center and vertices of the tetrahedron (**H1**, **H2**, **LP1**, **LP2**); all angles are expressed in degrees (°)
 - `theta_d`: is the dipole angle, formed between **R** and the dipole vector **d** = **H1** + **H2** 
+
+
+## Cite
+If you use `hydropathy` in a scientific publication, please cite:
+
+Di Rienzo, L., Miotto, M., Bò, L., Ruocco, G., Raimondo, D., & Milanetti, E. (2021). *Characterizing Hydropathy of Amino Acid Side Chain in a Protein Environment by Investigating the Structural Changes of Water Molecules Network.* In Frontiers in Molecular Biosciences (Vol. 8). Frontiers Media SA. https://doi.org/10.3389/fmolb.2021.626837
+
+```
+@article{Di_Rienzo_2021, 
+  title={Characterizing Hydropathy of Amino Acid Side Chain in a Protein Environment by Investigating the Structural Changes of Water Molecules Network}, 
+  volume={8}, 
+  ISSN={2296-889X}, 
+  url={http://dx.doi.org/10.3389/fmolb.2021.626837}, 
+  DOI={10.3389/fmolb.2021.626837}, 
+  journal={Frontiers in Molecular Biosciences}, 
+  publisher={Frontiers Media SA}, 
+  author={Di Rienzo, Lorenzo and Miotto, Mattia and Bò, Leonardo and Ruocco, Giancarlo and Raimondo, Domenico and Milanetti, Edoardo}, 
+  year={2021}, 
+  month=feb 
+}
+```
