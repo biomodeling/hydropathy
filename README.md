@@ -1,5 +1,7 @@
 # hydropathy
 [![Version](figures/version.svg)](https://github.com/biomodeling/hydropathy)
+![Python Version](figures/python.svg)
+[![DOI](figures/doi.svg)](https://www.frontiersin.org/articles/10.3389/fmolb.2021.626837/full)
 [![License: GPL v3](figures/license.svg)](https://github.com/biomodeling/hydropathy/blob/master/LICENSE.md)
 
 `hydropathy` is a script written in `python` that calculates the orientation of water modecules around a solute. 
@@ -18,21 +20,36 @@ More information on theory can be found <a href="https://www.frontiersin.org/art
 
 ## Installation
 `hydropathy` is not released on PyPi. You can install it from the GitHub repo as follows
-```
+```bash
 pip install git+https://github.com/biomodeling/hydropathy.git
 ```
 
 
 ## Usage
 The script takes as parameters:
-- an input path that contains a set of files in pdb format of the solute + solvent system
-- an output path where the results will be written
+- an absolute input path that contains a set of files in pdb format of the solute + solvent system
+- an absolute output path where the results will be written
 - the water model used (`tip3p`, `tip4p`, `tip5p`, `spc`)
 
 From your shell for example you can directly launch
+```bash
+hyrdopathy -i /<your>/<input>/<path>/ -o /<your>/<output>/<path> -w <water_model>
 ```
-hyrdopathy -i /your/input/path/ -o /yout/output/path -w tip3p
+
+### Tutorial
+To test the operation of the script you can use the two pdbs contained in `data/input_pdbs`. These are two frames of a tc10b molecular dynamics solvated with spc water molecules in triclinic box. 
+
+<p align="center">
+    <img src="figures/tc10b.png" width="350" height="350">
+</p>
+
+**NOTE:** only two pdbs are not sufficient to produce statistically significant data, and should be taken only as an example
+
+Download the contents of `data/input_pdbs` and run
+```bash
+hyrdopathy -i /<your>/<root>/data/input_pdbs/ -o /<your>/<output>/<path>/ -w spc
 ```
+Upon completion, you will get the results as those contained in `/data/output_files/`
 
 
 ## Output
@@ -41,6 +58,8 @@ The output consists of a series of files of the type `<resno>_<resname>.csv`, on
 - `distance`: is the distance (expressed in Å) between the oxygen atom of a water molecule (center of the tetrahedron) and the nearest solute atom (excluding hydrogens), if the latter is at a distance less than 6Å (**R**)
 - `theta1, ..., theta4`: are the angles formed between **R** and the vectors joining the center and vertices of the tetrahedron (**H1**, **H2**, **LP1**, **LP2**); all angles are expressed in degrees (°)
 - `theta_d`: is the dipole angle, formed between **R** and the dipole vector **d** = **H1** + **H2** 
+
+**NOTE:** blank files represent residues not exposed to water.
 
 
 ## Cite
