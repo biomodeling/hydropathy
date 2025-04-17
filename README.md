@@ -15,7 +15,7 @@ We also define the vectors joining the center of the tetrahedron with the four v
 
 By measuring the angles formed by **R** with **H1**, **H2**, **LP1**, **LP2** and **d**, the hydropathy of the solute can be characterized.
 
-More information on theory can be found <a href="https://www.frontiersin.org/articles/10.3389/fmolb.2021.626837/full" target="_blank">here</a>
+More information on theory can be found <a href="https://www.frontiersin.org/articles/10.3389/fmolb.2021.626837/full" target="_blank">here</a> and <a href="https://pubs.acs.org/doi/10.1021/jp500980x" target="_blank">here</a>
 
 
 ## Installation
@@ -33,7 +33,7 @@ The script takes as parameters:
 
 From your shell for example you can directly launch
 ```bash
-hyrdopathy -i /<your>/<input>/<path>/ -o /<your>/<output>/<path> -w <water_model>
+hydropathy -i /<your>/<input>/<path>/ -o /<your>/<output>/<path> -w <water_model>
 ```
 
 ### Tutorial
@@ -65,7 +65,9 @@ The output consists of a series of files of the type `<resno>_<resname>.csv`, on
 ## Cite
 If you use `hydropathy` in a scientific publication, please cite:
 
-Di Rienzo, L., Miotto, M., Bò, L., Ruocco, G., Raimondo, D., & Milanetti, E. (2021). *Characterizing Hydropathy of Amino Acid Side Chain in a Protein Environment by Investigating the Structural Changes of Water Molecules Network.* In Frontiers in Molecular Biosciences (Vol. 8). Frontiers Media SA. https://doi.org/10.3389/fmolb.2021.626837
+- L. Di Rienzo, M. Miotto, L. Bò, G. Ruocco, D. Raimondo, and E. Milanetti (2021). *Characterizing Hydropathy of Amino Acid Side Chain in a Protein Environment by Investigating the Structural Changes of Water Molecules Network.* Frontiers in Molecular Biosciences (Vol. 8). Frontiers Media SA. https://doi.org/10.3389/fmolb.2021.626837
+
+- S. Bonella, D. Raimondo, E. Milanetti, A. Tramontano, and G. Ciccotti (2014). *Mapping the Hydropathy of Amino Acids Based on Their Local Solvation Structure* The Journal of Physical Chemistry B 2014 118 (24), 6604-6613 DOI: 10.1021/jp500980x
 
 ```
 @article{Di_Rienzo_2021, 
@@ -79,5 +81,20 @@ Di Rienzo, L., Miotto, M., Bò, L., Ruocco, G., Raimondo, D., & Milanetti, E. (2
   author={Di Rienzo, Lorenzo and Miotto, Mattia and Bò, Leonardo and Ruocco, Giancarlo and Raimondo, Domenico and Milanetti, Edoardo}, 
   year={2021}, 
   month=feb 
+}
+
+@article{Bonella2014,
+  title = {Mapping the Hydropathy of Amino Acids Based on Their Local Solvation Structure},
+  volume = {118},
+  ISSN = {1520-5207},
+  url = {http://dx.doi.org/10.1021/jp500980x},
+  DOI = {10.1021/jp500980x},
+  number = {24},
+  journal = {The Journal of Physical Chemistry B},
+  publisher = {American Chemical Society (ACS)},
+  author = {Bonella,  S. and Raimondo,  D. and Milanetti,  E. and Tramontano,  A. and Ciccotti,  G.},
+  year = {2014},
+  month = jun,
+  pages = {6604–6613}
 }
 ```
